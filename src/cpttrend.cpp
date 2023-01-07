@@ -139,7 +139,7 @@ double ols_llk (NumericVector x, NumericVector y, long k){
 
   //Rcout << "variance: " << y1<< std::endl;
 
-  ret = double(n)/2*log(2*PI) + double(n)/2*log(variance) + double(n)/2;
+  ret = double(n)/2*log(2*M_PI) + double(n)/2*log(variance) + double(n)/2;
 
   return ret;
 }
