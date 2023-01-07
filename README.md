@@ -123,6 +123,9 @@ ERROR: dependency ‘Hmisc’ is not available for package ‘techchart’
 FIX:
 > install.packages(c('latticeExtra', 'Hmisc'))
 ```
+
+when using `install_github` pkg, may need to remove downloaded src in /tmp/Rtmp* folder in order to be in sync with github
+
 ### Learn R
 
 #### Courses
