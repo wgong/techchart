@@ -103,6 +103,9 @@ https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.ht
 > install_github("wgong/techchart")
 ```
 
+try out by following this blog: 
+https://prodiptag.blogspot.com/2016/10/systematic-trading-r-package-for.html
+
 #### Issues
 ```
 ERROR: dependencies ‘deldir’, ‘RcppEigen’ are not available for package ‘interp’
