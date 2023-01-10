@@ -74,8 +74,8 @@ $ sudo gdebi rstudio.deb
 
 $ sudo adduser rstudio  # add user
 
-$ sudo apt-get install gfortran libblas-dev liblapack-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libfontconfig1-dev libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev 
 # install dependencies
+$ sudo apt-get install gfortran libblas-dev liblapack-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libfontconfig1-dev libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev 
 
 $ rstudio & 
 # launch RStudio
@@ -129,10 +129,45 @@ FIX:
 
 when using `install_github` pkg, may need to remove downloaded src in /tmp/Rtmp* folder in order to be in sync with github
 
+#### requirements.txt for R
+
+see https://stackoverflow.com/questions/38928326/is-there-something-like-requirements-txt-for-r
+
+```
+install.packages("pak")
+```
+
 ### Learn R
+
+#### Blogs
+- https://www.datacamp.com/tutorial/r-packages-guide
 
 #### Courses
 - https://www.pluralsight.com/courses/programming-with-r
 
 #### Tips and Tricks
 The easiest way to resolve this problem is to install a binary, e.g. with https://packagemanager.rstudio.com/client/#/. Otherwise, you can use pak::pkg_system_requirements() to get an up-to-date list of system deps.
+
+#### Intro to Shiny App
+~/projects/learn-R/free_r_tips/027_intro_shiny/app.R
+
+#### Useful R pkgs
+
+"data.table", "chron", "plyr", "dplyr", "shiny",
+"shinyjs", "parallel", "devtools",  "utils",
+"stats", "ggplot2", "readxl",
+"feather", "readr", "DT", "knitr",
+"rmarkdown", "Rcpp"
+
+chron : Chronological Objects which can Handle Dates and Times
+plyr: Tools for Splitting, Applying and Combining Data
+dplyr: data wrangling
+readxl : read Excel files
+feather: Feather is file format designed for efficient on-disk serialisation of data frames that can be shared across programming languages (e.g. Python and R).
+readr: fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf').
+DT: An R interface to the DataTables library
+
+doMC
+microbenchmark: accurately measure and compare
+the execution time of R expressions.
+googlesheets4: Access Google Sheets using the Sheets API V4
