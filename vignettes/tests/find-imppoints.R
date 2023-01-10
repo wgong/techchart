@@ -7,13 +7,14 @@ library(techchart)
 
 symbol = "^GSPC"
 symbol = "SPY"
+symbol = "QQQ"
 spx_all <- getSymbols(symbol, auto.assign = FALSE)
 # dim(spx_all)
 View(spx_all)
 # missing today's quote
 
 # spx <- spx_all["2022::2023"]
-spx <- spx_all["2021-12-01::2022-10-15"]
+spx <- spx_all["2021-12-01::2023-02-01"]
 
 
 ## find pivot points
